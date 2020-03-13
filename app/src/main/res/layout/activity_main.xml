@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E65E34"
+    android:padding="15sp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagem1"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:background="#C9CDD1"
+        android:scaleType="fitCenter" />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#949696"
+    android:gravity="bottom"
+    android:layout_gravity="bottom"
+    android:padding="10dp"
+
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:id="@+id/btgaleria"
+        android:layout_width="100sp"
+        android:layout_height="70sp"
+        android:background="#507C7C"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:layout_margin="5sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/imagem1"
+       android:src="@drawable/galeria2_foreground" >
+
+    </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btcamera"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="100sp"
+            android:layout_height="70sp"
+            android:layout_gravity="center"
+            android:layout_margin="5sp"
+            android:background="#507C7C"
+            android:layout_weight="1.5"
+
+            app:layout_constraintTop_toBottomOf="@+id/imagem1"
+            android:src="@drawable/camera2_foreground" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
