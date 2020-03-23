@@ -113,12 +113,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run(){
                 Log.i("Ygo","Repete");
+                tirarFoto();
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         repeteAcao();
                     }
-                },3000);
+                },10000);
             }
         }.start();
     }
