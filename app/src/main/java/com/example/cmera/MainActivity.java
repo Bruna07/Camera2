@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.verifcarPermissaoSd();
-        this.armazenamentoDisp();
+        //this.verifcarPermissaoSd();
+        //this.armazenamentoDisp();
 
 
         imagem = (ImageView) findViewById(R.id.imagem1);
